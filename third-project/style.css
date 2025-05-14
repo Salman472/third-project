@@ -27,8 +27,9 @@
     text-align: center;
 }
 .btn-primary{
-    height: 64px;
-    width: 180px;
+    /* height: 64px; */
+    /* width: 180px; */
+    padding: 21px 25px;
     border: none;
     border-radius: 8px;
     background-color: rgba(255, 144, 14, 1);
@@ -124,6 +125,45 @@ main>section{
     font-size: 1rem;
     font-weight: 400;
 }
+
+/* features section start */
+.feature{
+    gap: 140px;
+}
+#featur-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    
+}
+.feature-card{
+    /* width: 586px; */
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+     padding: 30px;
+}
+/* .feature-img{
+    width: 100%;
+} */
+.feature-card .feature-title-2{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   
+}
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+.experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
 /* media query */
 /* header responsive */
 @media screen and (max-width:576px) {
@@ -145,6 +185,20 @@ main>section{
         margin-left: 20px;
     }
 }
+@media screen and (max-width:576px) {
+    .feature{
+        flex-direction: column;
+    }
+    #experience-badge{
+        margin-left: 10px;
+        margin-top: 30px;
+
+    }
+    .feature-img{
+        width: 100%;
+    }
+    
+}
 /* medium device */
 
 @media screen and (min-width:576px) and (max-width:1045px) {
@@ -155,4 +209,20 @@ main>section{
     .our-features{
         margin-left: 50px auto;
     }
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .feature{
+        flex-direction: column;
+        margin: 70px ;
+    }
+     #experience-badge{
+        margin-left: 10px;
+        margin-top: 30px;
+
+    }
+     .feature-img{
+        width: 100%;
+    }
+   
 }
