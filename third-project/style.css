@@ -195,27 +195,55 @@ main>section{
     margin-top: 10px;
 }
 
+/* sponsor section style */
+
+.sponsor-container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.sponsor-contant{
+    width: 34rem;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsor-title{
+   margin-bottom: 10px;
+}
+
+.sponsor-img-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 50px 0px;
+}
+.sponsor-img-container img{
+    filter: grayscale(100%);
+}
+
 /* media query */
 /* small device */
 @media screen and (max-width:576px) {
     .navbar{
         flex-direction: column;
     }
-}
-
-@media screen and (max-width:576px) {
     .teams{
         flex-direction: column;
     }
-    .team-img-container{
+    .team-img-container,.facts-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .facts-container{
+        justify-items: center;
+        gap: 25px;
+    }
+    #fact-title{
+        margin-left: 20px;
+    }
+    .facts-description{
+        margin-left: 20px;
     }
     .our-features{
         margin-left: 20px;
     }
-}
-
-@media screen and (max-width:576px) {
     .feature{
         flex-direction: column;
     }
@@ -227,7 +255,11 @@ main>section{
     .feature-img{
         width: 100%;
     }
-    
+    .sponsor-img-container{
+        grid-template-columns: 1fr;
+        gap: 50px;
+        justify-items: center;
+    }
 }
 
 
@@ -241,9 +273,6 @@ main>section{
     .our-features{
         margin-left: 50px auto;
     }
-}
-
-@media screen and (min-width:576px) and (max-width:992px) {
     .feature{
         flex-direction: column;
         margin: 70px ;
@@ -256,5 +285,23 @@ main>section{
      .feature-img{
         width: 100%;
     }
-   
+    .facts-container{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        gap: 25px;
+    }
+     #fact-title{
+        margin-left: 20px;
+    }
+    .facts-description{
+        margin-left: 20px;
+    }
+    .sponsor-img-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        justify-items: center;
+    }
+
 }
+
+
